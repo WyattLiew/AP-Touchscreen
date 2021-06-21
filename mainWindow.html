@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/splide.min.css">
+        <link rel="preload" href="css/font/HelveticaNeueLTStd-Th.woff2" as="font" type="font/woff2" crossorigin>
+    </head>
+</head>
+<body>
+    <div class="bg">
+    <img src="assets/bg.JPG">
+    </div>
+    <!-- Home Page -->
+    <div id="homePage_scene">
+        <canvas id="homePageCanvas">
+        </canvas>
+        <div id="touchSurface_homePage">
+        <div id="touchSurface_homePage_inner"></div>
+        <div class="homePage__arrow-text">
+        <h1>swipe up to discover</h1>
+        </div>
+        <div class="homePage__arrow">
+            <span></span>
+        </div>
+</div>
+    </div>
+
+    <!-- Story Here -->
+     <div class="story_banner">
+        <div id="story__video-close">Skip >|</div>
+     <video id="story" muted>
+            <source src="assets/starting.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <!-- Main Page -->
+      <div class="mainPage-Container">
+<div class="mainPage__box-Container float-left" id="mainPage-whiteGold-button">
+        <div class="sideContent__box-left">
+            <div class="mainPage__image-container">
+           <img src="assets/whiteGold/IMG_2306.PNG">
+        </div>
+        <div class="mainPage__header">
+            <div class="mainPage__title">
+            <h1 class="">CODE 11.59 BY AUDEMARS PIGUET</h1>
+            <h2>SELFWINDING CHRONOGRAPH</h2>
+            <p>26393NB.00.A002CR.01</p>
+            </div>
+             <p class="mainPage__action">Discover</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="mainPage__box-Container-right float-right" id="mainPage-pinkGold-button">
+        <div class="sideContent__box-right">
+        <div class="mainPage__header-right">
+            <div class="mainPage__title-right">
+            <h1>Code 11.59 By audemars piguet</h1>
+                <h2>selfwinding chronograph</h2>
+                <p>26393NR.OO.A002CR.01</p>
+        </div>
+        <p class="mainPage__action-right">Discover</p></div>
+        <div class="mainPage__image-container-right">
+              <img src="assets/pinkGold/IMG_2307.PNG">
+        </div>
+        </div>
+    </div>
+</div> 
+
+<!-- Watch Page (White Gold)-->
+<div class="watchPage__whiteGold-Container">
+    <div class="watchPage__whiteGold-Header">
+        <div class="watchPage__whiteGold-Header-title">
+        <h1>Code 11.59 by Audemars Piguet</h1>
+        <h2>Selfwinding chronograph</h2>
+        <p>26393NB.OO.A002CA.01</p>
+    </div>
+    </div>
+    <!-- <div class="smoke__text-whiteGold">
+    <span>C</span><span>O</span><span>D</span><span>E</span><span>&nbsp;</span>
+    <span>1</span><span>1</span><span>.</span><span>5</span><span>9</span><span>&nbsp;</span>
+    <span>B</span><span>Y</span><span>&nbsp;</span>
+    <span>A</span><span>U</span><span>D</span><span>E</span><span>M</span><span>A</span><span>R</span><span>S</span><span>&nbsp;</span>
+    <span>P</span><span>I</span><span>G</span><span>U</span><span>E</span><span>T</span>
+</div> -->
+    <div id="watchPage__whiteGold-Scene">
+       <!--  <canvas id="watchPageCanvasWhiteGold">
+        </canvas> -->
+        <div
+        class="cloudimage-360" 
+        data-folder="assets/AP_CODE_CERAMIC_360_2500_WhiteGold/" 
+        data-filename="AP_CODE_CERAMIC_OrGris_2500_{index}.png"
+        data-amount="360"
+        data-spin-reverse
+        ></div>
+    </div>
+    <div id="watchPage__whiteGold-Option">
+        <button class="selected watchPage__whiteGold-selected">White Gold</button>
+        <button id="watchPage__whiteGold__toPinkGold">Pink Gold</button>
+    </div>
+    <div id="watchPage__whiteGold-Menu">
+        <button id="watchPage__whiteGold__video">Video</button>
+        <button id="watchPage__whiteGold__spec">Specification</button>
+        <button id="watchPage__whiteGold__gallery">Gallery</button>
+    </div>
+</div>
+
+<!-- White Gold - Spec -->
+<div id="watchPage__whiteGold-spec">
+        <div class="watchPage__image-container">
+           <img src="assets/whiteGold/CODE_26393NB-OO-A002KB-01_SDT_PNG.png">
+           <button id="watchPage__whiteGold-specBtn1"></button>
+           <button id="watchPage__whiteGold-specBtn2"></button>
+           <button id="watchPage__whiteGold-specBtn3"></button>
+           <button id="watchPage__whiteGold-specBtn4"></button>
+           <button id="watchPage__whiteGold-specBtn5"></button>
+        </div>
+        <div class="watchPage__whiteGold-details">
+            <div id="whiteGold__spec-1">
+                <div class="solidLine"></div>
+                    <div class="whiteGold__spec-1-text">
+                        <h1>STRAP</h1>
+                        <p>black rubber coated strap with 18-carat white gold pin buckle.</p>
+                    </div>
+            </div>
+            <div id="whiteGold__spec-2">
+               <div class="whiteGold__spec-2-text">
+                    <div class="row specImg">
+                        <img class="col" src="assets/whiteGold/MVT_4401_face-cadran_PNG.png">
+                        <img class="col" src="assets/whiteGold/MVT_4401_face-fond_PNG.png">
+                    </div>
+                    <h1>MOVEMENT SPECIFICATION</h1>
+                    <p>Selfwinding Manufacture Calibre 4401</p>
+                    <div class="row">
+                        <div class="col">Dimension</div>
+                        <div class="col">32mm (14 lignes)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Thickness</div>
+                        <div class="col">6.80mm</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Number of parts</div>
+                        <div class="col">367</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Number of jewels</div>
+                        <div class="col">40</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Maximun power</div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">reserve guaranteed</div>
+                        <div class="col">70h</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Frequency of balance wheel</div>
+                        <div class="col">4 Hz (28,000 vibrations/hour)</div>
+                    </div>
+                </div>
+            </div>
+            <div id="whiteGold__spec-3">
+                    <div class="solidLine"></div>
+                    <div class="whiteGold__spec-3-text">
+                    <h1>FUNCTION</h1>
+                    <p>Flyback chronograph, hours, minutes, small seconds and date.</p>
+                </div>
+            </div>
+            <div id="whiteGold__spec-4">
+                    <div class="solidLine"></div>
+                    <div class="whiteGold__spec-4-text">
+                    <h1>DIAL</h1>
+                    <p>Smoke grey dial with a vertical satin-brushed base, white gold applied hour makers and hands, opaline black inner bezel.</p>
+                </div>
+            </div>
+             <div id="whiteGold__spec-5">
+                    <div class="solidLine"></div>
+                    <div class="whiteGold__spec-5-text">
+                    <h1>CASE</h1>
+                    <p>Black ceramic middle case, 18-carat white gold bezel, lugs, caseback, crown and pushpieces, double curved glareproof sapphire crystal, glareproof sapphire caseback, water-resistant to 30m.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="watchPage__whiteGold-gallery">
+       <div class="watchPage__whiteGold-gallery-container">
+         <div id="whiteGold__gallery-close">X</div>
+    <div class="splide1 splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide" style="width: 670px;">
+                <div class="watchPage__whiteGold-gallery-mySlides">
+                <img id="whiteGoldImage1" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU04_PNG.png">
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 500px;" >
+                <div class="watchPage__whiteGold-gallery-mySlides">
+                <img id="whiteGoldImage2" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP09_PNG.png" >
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 500px;">
+                 <div class="watchPage__whiteGold-gallery-mySlides">
+                <img id="whiteGoldImage3" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP18_PNG.png" >
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 600px;">
+                 <div class="watchPage__whiteGold-gallery-mySlides">
+                <img id="whiteGoldImage4" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_backcase_GP06_PNG.png" >
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 500px;">
+                <div class="watchPage__whiteGold-gallery-mySlides">
+    <img id="whiteGoldImage5" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU03_PNG.png">
+  </div>
+            </li>
+             <li class="splide__slide"style="width: 600px;">
+                 <div class="watchPage__whiteGold-gallery-mySlides">
+    <img id="whiteGoldImage6" src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP08_PNG.png" >
+  </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- White Gold - Video -->
+<div class="story_banner-whiteGold">
+    <div id="whiteGold__video-close">X</div>
+     <video id="whiteGold__video" muted>
+            <source src="assets/whiteGold/CODE_26393NB-OO-A002KB-01_Mood_video_35s_No_Logo_MP4 1920x1080.mp4" type="video/mp4">
+          </video>
+</div>
+
+
+
+<!-- Watch Page (Pink Gold)-->
+<div class="watchPage__pinkGold-Container">
+    <div class="watchPage__pinkGold-Header">
+        <div class="watchPage__pinkGold-Header-title">
+        <h1>Code 11.59 by Audemars Piguet</h1>
+        <h2>Selfwinding chronograph</h2>
+        <p>26393NR.OO.A002CA.01</p>
+    </div>
+    </div>
+    <!-- <div class="smoke__text-pinkGold">
+    <span>C</span><span>O</span><span>D</span><span>E</span><span>&nbsp;</span>
+    <span>1</span><span>1</span><span>.</span><span>5</span><span>9</span><span>&nbsp;</span>
+    <span>B</span><span>Y</span><span>&nbsp;</span>
+    <span>A</span><span>U</span><span>D</span><span>E</span><span>M</span><span>A</span><span>R</span><span>S</span><span>&nbsp;</span>
+    <span>P</span><span>I</span><span>G</span><span>U</span><span>E</span><span>T</span>
+</div> -->
+    <div id="watchPage__pinkGold-Scene">
+       <!--  <canvas id="watchPageCanvaspinkGold">
+        </canvas> -->
+        <div
+        class="cloudimage-360" 
+        data-folder="assets/AP_CODE_CERAMIC_360_2500_PinkGold/" 
+        data-filename="AP_CODE_CERAMIC_OrRose_2500_{index}.png"
+        data-amount="360"
+        data-spin-reverse
+        ></div>
+    </div>
+    <div id="watchPage__pinkGold-Option">
+         <button id="watchPage__pinkGold__toWhiteGold">White Gold</button>
+        <button class="selected watchPage__pinkGold-selected">Pink Gold</button>
+    </div>
+    <div id="watchPage__pinkGold-Menu">
+        <button id="watchPage__pinkGold__video">Video</button>
+        <button id="watchPage__pinkGold__spec">Specification</button>
+        <button id="watchPage__pinkGold__gallery">Gallery</button>
+    </div>
+</div>
+
+<!-- Pink Gold - Spec -->
+<div id="watchPage__pinkGold-spec">
+        <div class="watchPage__image-container">
+           <img src="assets/pinkGold/CODE_26393NR-OO-A002KB-01_SDT_PNG.png">
+           <button id="watchPage__pinkGold-specBtn1"></button>
+           <button id="watchPage__pinkGold-specBtn2"></button>
+           <button id="watchPage__pinkGold-specBtn3"></button>
+           <button id="watchPage__pinkGold-specBtn4"></button>
+           <button id="watchPage__pinkGold-specBtn5"></button>
+        </div>
+        <div class="watchPage__pinkGold-details">
+            <div id="pinkGold__spec-1">
+                <div class="solidLine"></div>
+                    <div class="pinkGold__spec-1-text">
+                        <h1>STRAP</h1>
+                        <p>black rubber coated strap with 18-carat pink gold pin buckle.</p>
+                    </div>
+            </div>
+            <div id="pinkGold__spec-2">
+               <div class="pinkGold__spec-2-text">
+                    <div class="row specImg">
+                        <img class="col" src="assets/pinkGold/MVT_4401_face-cadran_PNG.png">
+                        <img class="col" src="assets/pinkGold/MVT_4401_face-fond_PNG.png">
+                    </div>
+                    <h1>MOVEMENT SPECIFICATION</h1>
+                    <p>Selfwinding Manufacture Calibre 4401</p>
+                    <div class="row">
+                        <div class="col">Dimension</div>
+                        <div class="col">32mm (14 lignes)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Thickness</div>
+                        <div class="col">6.80mm</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Number of parts</div>
+                        <div class="col">367</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Number of jewels</div>
+                        <div class="col">40</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Maximun power</div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">reserve guaranteed</div>
+                        <div class="col">70h</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Frequency of balance wheel</div>
+                        <div class="col">4 Hz (28,000 vibrations/hour)</div>
+                    </div>
+                </div>
+            </div>
+            <div id="pinkGold__spec-3">
+                    <div class="solidLine"></div>
+                    <div class="pinkGold__spec-3-text">
+                    <h1>FUNCTION</h1>
+                    <p>Flyback chronograph, hours, minutes, small seconds and date.</p>
+                </div>
+            </div>
+            <div id="pinkGold__spec-4">
+                    <div class="solidLine"></div>
+                    <div class="pinkGold__spec-4-text">
+                    <h1>DIAL</h1>
+                    <p>Smoke grey dial with a vertical satin-brushed base, pink gold applied hour makers and hands, opaline black inner bezel.</p>
+                </div>
+            </div>
+             <div id="pinkGold__spec-5">
+                    <div class="solidLine"></div>
+                    <div class="pinkGold__spec-5-text">
+                    <h1>CASE</h1>
+                    <p>Black ceramic middle case, 18-carat pink gold bezel, lugs, caseback, crown and pushpieces, double curved glareproof sapphire crystal, glareproof sapphire caseback, water-resistant to 30m.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="watchPage__pinkGold-gallery">
+       <div class="watchPage__pinkGold-gallery-container">
+         <div id="pinkGold__gallery-close">X</div>
+    <div class="splide2 splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide" style="width: 600px;">
+                <div class="watchPage__pinkGold-gallery-mySlides">
+                <img id="pinkGoldImage1" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_backcase_GP11_PNG.png">
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 750px;" >
+                <div class="watchPage__pinkGold-gallery-mySlides">
+                <img id="pinkGoldImage2" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_GP08_PNG.png" >
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 750px;">
+                 <div class="watchPage__pinkGold-gallery-mySlides">
+                <img id="pinkGoldImage3" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_GP04_PNG.png" >
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 500px;">
+                 <div class="watchPage__pinkGold-gallery-mySlides">
+                <img id="pinkGoldImage4" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU05_PNG.png" >
+              </div>
+            </li>
+            <li class="splide__slide"style="width: 670px;">
+                <div class="watchPage__pinkGold-gallery-mySlides">
+    <img id="pinkGoldImage5" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU04_PNG.png">
+  </div>
+            </li>
+             <li class="splide__slide"style="width: 500px;">
+                 <div class="watchPage__pinkGold-gallery-mySlides">
+    <img id="pinkGoldImage6" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU01_PNG.png" >
+  </div>
+            </li>
+            <li class="splide__slide"style="width: 500px;">
+                 <div class="watchPage__pinkGold-gallery-mySlides">
+    <img id="pinkGoldImage6" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU02_PNG.png" >
+  </div>
+            </li>
+            <li class="splide__slide"style="width: 500px;">
+                 <div class="watchPage__pinkGold-gallery-mySlides">
+    <img id="pinkGoldImage6" src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU03_PNG.png" >
+  </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Pink Gold - Video -->
+<div class="story_banner-pinkGold">
+    <div id="pinkGold__video-close">X</div>
+     <video id="pinkGold__video" muted>
+            <source src="assets/pinkGold/CODE_26393NR-OO-A002KB-01_Mood_video_37s_Logo_MP4 1920x1080.mp4" type="video/mp4">
+          </video>
+      </div>
+
+
+
+<script src="js/three.js"></script>
+<script src="js/OrbitControls.js"></script>
+<script src="js/MTLLoader.js"></script>
+<script src="js/OBJLoader.js"></script>
+<!-- <script src="js/3d.js"></script> -->
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script src="js/whitegold.js"></script>
+<script src="js/pinkgold.js"></script>
+<script type="text/javascript" src="js/smoke.js"></script>
+<script src="js/main.js"></script>
+<script src="js/touchbox.js"></script>
+
+<script defer src="js/js-cloudimage-360-view.min.js"></script>
+<script src="js/splide.min.js"></script>
+<script>
+  // document.addEventListener( 'DOMContentLoaded', function () {
+      new Splide( '.splide1', {
+  type     : 'loop',
+  padding: {
+      right: '5rem',
+      left : '5rem',
+  },
+  autoWidth: true,
+  focus    : 'center',
+  arrows: false,
+}).mount();
+      new Splide( '.splide2', {
+  type     : 'loop',
+  padding: {
+      right: '5rem',
+      left : '5rem',
+  },
+  autoWidth: true,
+  focus    : 'center',
+  arrows: false,
+}).mount();
+  // });
+</script>
+</body>
+</html>

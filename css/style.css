@@ -142,6 +142,26 @@ html, body {
     display: none;
 }
 
+#pinkGold__spec-360image{
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 3px 12px white;
+    right: -65px;
+    top: 686px;
+    z-index: 10;
+    display: none;
+}
+
+#whiteGold__spec-360image{
+  color: white;
+    font-size: 30px;
+    text-shadow: 2px 3px 12px white;
+    right: -65px;
+    top: 686px;
+    z-index: 10;
+    display: none;
+}
+
 #pinkGold__video-close {
     color: white;
     font-size: 30px;

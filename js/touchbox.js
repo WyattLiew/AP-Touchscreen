@@ -65,7 +65,7 @@ function doInactive() {
   gsap.to('#watchPage__pinkGold__gallery',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
 
   // show Home page
-  gsap.to('#homePage_scene',{duration:4,delay:1.5,opacity:1,display:'block'})
+  gsap.to('#homePage_scene',{duration:1,delay:1,opacity:1,display:'block'})
   isContentActive = 0;
   window.human = false;
 

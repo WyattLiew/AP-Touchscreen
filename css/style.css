@@ -7,6 +7,7 @@
 html, body {
   width: 100%;
   height: 100%;
+  user-select: none;
   overflow: hidden;
   /*font-family: helvetica neue;*/
   font-family: 'Helvetica Neue LT Std';
@@ -139,26 +140,6 @@ html, body {
     right: 60px;
     top: 20px;
     z-index: 2;
-    display: none;
-}
-
-#pinkGold__spec-360image{
-    color: white;
-    font-size: 30px;
-    text-shadow: 2px 3px 12px white;
-    right: -65px;
-    top: 686px;
-    z-index: 10;
-    display: none;
-}
-
-#whiteGold__spec-360image{
-  color: white;
-    font-size: 30px;
-    text-shadow: 2px 3px 12px white;
-    right: -65px;
-    top: 686px;
-    z-index: 10;
     display: none;
 }
 

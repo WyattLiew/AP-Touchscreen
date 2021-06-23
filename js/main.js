@@ -141,11 +141,6 @@ function completeReverseWhiteGoldHandler() {
              whiteGold_360Image=1;
         }
     }})
-    // smokeText_whiteGold.style.display="block";
-    //  for (var i = 0; i <smokeTextSpan_whiteGold.length; i++) {
-    //      smokeTextSpan_whiteGold[i].style.animation = "smoky 2s both";
-    //      smokeTextSpan_whiteGold[i].style.animationDelay= `${1 + i/10}s`; 
-    // }
     gsap.fromTo('.watchPage__whiteGold-Header-title',{opacity:0},{duration:2,delay:0.3,opacity:1});
     gsap.fromTo('#watchPage__whiteGold-Scene',{opacity:0},{duration:3,delay:1,opacity:1});
     gsap.fromTo('.watchPage__whiteGold-selected',{y:'-100%',opacity:0,boxShadow:'0 0 0 0 #ffffff',border: "none"},{duration:1.5,opacity:1,delay:1,y:'0%',boxShadow:"1px 1px 8px 13px #747474",border: "none"});
@@ -168,11 +163,6 @@ function completeReverseWhiteGoldHandler() {
                  whiteGold_360Image=1;
             }
         }})
-    // smokeText_pinkGold.style.display="block";
-    //  for (var i = 0; i <smokeTextSpan_pinkGold.length; i++) {
-    //      smokeTextSpan_pinkGold[i].style.animation = "smoky 2s both";
-    //      smokeTextSpan_pinkGold[i].style.animationDelay= `${1 + i/10}s`; 
-    // }
     gsap.fromTo('.watchPage__pinkGold-Header-title',{opacity:0},{duration:2,delay:0.3,opacity:1});
     gsap.fromTo('#watchPage__pinkGold-Scene',{opacity:0},{duration:3,delay:1,opacity:1});
     gsap.fromTo('#watchPage__pinkGold__toWhiteGold',{y:'-100%',opacity:0,boxShadow:'0 0 0 0 #ffffff',border: "none"},{duration:1.5,opacity:1,delay:1,y:'0%',boxShadow:"1px 1px 8px 13px #f6f6f6",border: "2px solid white"});

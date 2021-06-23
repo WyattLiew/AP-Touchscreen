@@ -13,10 +13,6 @@ var watchPage__whiteGold__specBtn3 = document.getElementById("watchPage__whiteGo
 var watchPage__whiteGold__specBtn4 = document.getElementById("watchPage__whiteGold-specBtn4");
 var watchPage__whiteGold__specBtn5 = document.getElementById("watchPage__whiteGold-specBtn5");
 
-// var whiteGold__spec__360Image = document.getElementById("whiteGold__spec-360image");
-// smoke text effect
-// var smokeText_whiteGold = document.querySelector('.smoke__text-whiteGold');
-// var smokeTextSpan_whiteGold = document.querySelectorAll('.smoke__text-whiteGold span');
 
 // spec event
 watchPage__whiteGold__specbtn.addEventListener("touchstart", handleWhiteGoldPage_spec, false);
@@ -26,7 +22,6 @@ watchPage__whiteGold__specBtn3.addEventListener("touchstart", handleWhiteGoldPag
 watchPage__whiteGold__specBtn4.addEventListener("touchstart", handleWhiteGoldPage_specDetails4, false);
 watchPage__whiteGold__specBtn5.addEventListener("touchstart", handleWhiteGoldPage_specDetails5, false);
 
-// whiteGold__spec__360Image.addEventListener("touchstart",handleWhiteGoldPage_360Image,false);
 
 // Gellery
 var watchPage__whiteGold__gallerybtn = document.getElementById("watchPage__whiteGold__gallery");
@@ -37,8 +32,6 @@ watchPage__whiteGold__toPinkGold.addEventListener("touchstart", handlewhiteGoldP
 
 //Gallery event
 watchPage__whiteGold__gallerybtn.addEventListener("touchstart", handleWhiteGoldPage_gallery, false);
-// watchPage__whiteGold__gallerytoPinkGold.addEventListener("touchstart", handleWhiteGoldPage_galleryToPinkGold, false);
-// watchPage__whiteGold__gallerytoWhiteGold.addEventListener("touchstart", handleWhiteGoldPage_galleryToWhiteGold, false);
 // Video event
 watchPage_whiteGold_videobtn.addEventListener("touchstart", handleWhiteGoldPage_video, false);
 let clickcount_whitegold_video =0,clickcount_whitegold_spec =0,clickcount_whitegold_gallery=0;
@@ -61,7 +54,6 @@ function handleWhiteGoldPage_video(e) {
     gsap.to('.watchPage__whiteGold-Container',{duration:0.5,delay:0.3,display:'none',onComplete: playVideo_whiteGold});
     whiteGold_video.addEventListener('ended',whiteGoldVideoEndHandler,false);
   }
-//   clickcount_whitegold_video++;
     e.preventDefault();
     e.stopImmediatePropagation();
     return false
@@ -74,7 +66,6 @@ function playVideo_whiteGold() {
     whiteGold_video.style.display="block";
     whiteGold_close.style.position="absolute";
     whiteGold_close.style.display="block";
-    // whiteGold__spec__360Image.style.display="none";
     whiteGold_video.play();
 }
 
@@ -91,7 +82,6 @@ function whiteGoldVideoEndHandler(e) {
 };
 
 function completedVideo_whiteGold() {
-    // whiteGold__spec__360Image.style.display= "none";
     clickcount_whitegold_video = 0;
     clickcount_whitegold_spec = 0;
     clickcount_whitegold_specPreventTouch =0;
@@ -152,7 +142,6 @@ function showPoint_whiteGold() {
     gsap.fromTo('#watchPage__whiteGold-specBtn3',{opacity:0},{duration:1,delay:0.4,opacity:0.8});
     gsap.fromTo('#watchPage__whiteGold-specBtn4',{opacity:0},{duration:1,delay:0.6,opacity:0.8});
     gsap.fromTo('#watchPage__whiteGold-specBtn5',{opacity:0},{duration:1,delay:0.8,opacity:0.8,onComplete:function(){
-        // gsap.to(whiteGold__spec__360Image,{duration:1,display:'block',position:'absolute'});
         clickcount_whitegold_video = 0
         clickcount_whitegold_spec = 0
         clickcount_whitegold_gallery = 0;
@@ -161,16 +150,7 @@ function showPoint_whiteGold() {
     }});
 }
 
-//spec to 360 Image
-// function handleWhiteGoldPage_360Image(){
-//     watchPage__whiteGold_spec.style.display= "none";
-//     gsap.to('#watchPage__whiteGold-Scene',{duration:0.5,opacity:1});
-//     gsap.to('#watchPage__whiteGold__video',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
-//     gsap.to('#watchPage__whiteGold__spec',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
-//     gsap.to('#watchPage__whiteGold__gallery',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff",onComplete:function(){
-//         completedVideo_whiteGold();
-//     }});
-// }
+
 
 // spec details
 function handleWhiteGoldPage_specDetails1() {
@@ -298,15 +278,10 @@ function handleWhiteGoldPage_gallery(e) {
     //no working
     }else{
  if (clickcount_whitegold_gallery <1 && clickcount_whitegold_spec <1 && clickcount_whitegold_video <1 &&clickcount_pinkGold_toWhiteGold<1 && clickcount_pinkGold_toPinkGold<1) {
-    // swapImageToWhitegold();
-    //  gsap.to('#watchPage__whiteGold__gallerytoWhiteGold',{duration:0.3,border: "2px solid #747474",boxShadow: "1px 1px 8px 13px #747474",color: "#373737"});
-     // watchPage__whiteGold__gallerytoWhiteGold.classList.remove("selected")
-    //  gsap.to('#watchPage__whiteGold__gallerytoPinkGold',{duration:2,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
-    clickcount_whitegold_gallery++; 
+clickcount_whitegold_gallery++; 
     gsap.to('#watchPage__whiteGold__gallery',{duration:0.3,border: "2px solid #747474",boxShadow: "1px 1px 8px 13px #747474",color: "#373737"});
     gsap.to('.watchPage__whiteGold-Container',{duration:0.2,delay:0.3,display:'none',onComplete: showGallery_whiteGold});
   }
-//   clickcount_whitegold_gallery++;
     e.preventDefault();
     e.stopImmediatePropagation();
     return false
@@ -318,7 +293,6 @@ function showGallery_whiteGold() {
     watchPage__whiteGold_gallery.style.display="block";
     whiteGold_galleryClose.style.position="absolute";
     whiteGold_galleryClose.style.display="block";
-    // whiteGold__spec__360Image.style.display="none";
 }
 
 // close gallery
@@ -338,104 +312,6 @@ function whiteGoldGalleryEndHandler(e) {
     gsap.to('#watchPage__whiteGold__gallery',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
 };
 
-// Gallery
-// var whiteGoldslideIndex = 1;
-// whiteGoldshowSlides(whiteGoldslideIndex);
-
-// function whiteGoldplusSlides(n) {
-//   whiteGoldshowSlides(whiteGoldslideIndex += n);
-// }
-
-// function whiteGoldCurrentSlide(n) {
-//   whiteGoldshowSlides(whiteGoldslideIndex = n);
-// }
-
-// function whiteGoldshowSlides(n) {
-//   var i;
-//   var whiteGoldslides = document.getElementsByClassName("watchPage__whiteGold-gallery-mySlides");
-//   var whiteGolddots = document.getElementsByClassName("watchPage__whiteGold-gallery-demo");
-//   if (n > whiteGoldslides.length) {whiteGoldslideIndex = 1}
-//   if (n < 1) {whiteGoldslideIndex = whiteGoldslides.length}
-//   for (i = 0; i < whiteGoldslides.length; i++) {
-//       whiteGoldslides[i].style.display = "none";
-//   }
-//   for (i = 0; i < whiteGolddots.length; i++) {
-//       whiteGolddots[i].className = whiteGolddots[i].className.replace(" active", "");
-//   }
-//   whiteGoldslides[whiteGoldslideIndex-1].style.display = "block";
-//   whiteGolddots[whiteGoldslideIndex-1].className += " active";
-// }
-
-// Gallery swap image to pink gold
-function handleWhiteGoldPage_galleryToPinkGold(e) {
-    if (clickcount_whitegold_galleryToPinkGold <1) {
-    clickcount_whitegold_galleryToWhiteGold =1;
-     gsap.to('#watchPage__whiteGold__gallerytoPinkGold',{duration:0.3,border: "2px solid #747474",boxShadow: "1px 1px 8px 13px #747474",color: "#373737"});
-     watchPage__whiteGold__gallerytoWhiteGold.classList.remove("selected")
-     gsap.to('#watchPage__whiteGold__gallerytoWhiteGold',{duration:2,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff",onComplete:swapImageToPinkgold});
-        
-    // gsap.to('.watchPage__whiteGold-Container',{duration:0.2,delay:0.3,display:'none',onComplete: showGallery_whiteGold});
-  }
-  clickcount_whitegold_galleryToPinkGold++;
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    return false
-}
-
-function swapImageToPinkgold() {
-    document.getElementById("whiteGoldImageSmall1").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU03_PNG.png";
-    document.getElementById("whiteGoldImageSmall2").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU04_PNG.png";
-    document.getElementById("whiteGoldImageSmall3").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU05_PNG.png";
-    document.getElementById("whiteGoldImageSmall4").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_GP04_PNG.png";
-    document.getElementById("whiteGoldImageSmall5").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_backcase_GP11_PNG.png";
-    document.getElementById("whiteGoldImageSmall6").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_GP08_PNG.png";
-    document.getElementById("whiteGoldImageSmall7").style.display="block";
-    document.getElementById("whiteGoldImageSmall8").style.display="block";
-
-    document.getElementById("whiteGoldImage1").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU03_PNG.png";
-    document.getElementById("whiteGoldImage2").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU04_PNG.png";
-    document.getElementById("whiteGoldImage3").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_CU05_PNG.png";
-    document.getElementById("whiteGoldImage4").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_GP04_PNG.png";
-    document.getElementById("whiteGoldImage5").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_backcase_GP11_PNG.png";
-    document.getElementById("whiteGoldImage6").src="assets/pinkGold/CODE_26393NR-OO-A002CA-01_closeup_GP08_PNG.png";
-    clickcount_whitegold_galleryToWhiteGold = 0;
-}
-
-// Gallery swap image to white gold
-function handleWhiteGoldPage_galleryToWhiteGold(e) {
-    if (clickcount_whitegold_galleryToWhiteGold <1) {
-        clickcount_whitegold_galleryToPinkGold=1;
-     gsap.to('#watchPage__whiteGold__gallerytoWhiteGold',{duration:0.3,border: "2px solid #747474",boxShadow: "1px 1px 8px 13px #747474",color: "#373737"});
-     // watchPage__whiteGold__gallerytoWhiteGold.classList.remove("selected")
-     gsap.to('#watchPage__whiteGold__gallerytoPinkGold',{duration:2,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff",onComplete:swapImageToWhitegold});
-        
-    // gsap.to('.watchPage__whiteGold-Container',{duration:0.2,delay:0.3,display:'none',onComplete: showGallery_whiteGold});
-  }
-  clickcount_whitegold_galleryToWhiteGold++;
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    return false
-}
-
-function swapImageToWhitegold() {
-    document.getElementById("whiteGoldImageSmall1").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU04_PNG.png";
-    document.getElementById("whiteGoldImageSmall2").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP09_PNG.png";
-    document.getElementById("whiteGoldImageSmall3").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP18_PNG.png";
-    document.getElementById("whiteGoldImageSmall4").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_backcase_GP06_PNG.png";
-    document.getElementById("whiteGoldImageSmall5").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU03_PNG.png";
-    document.getElementById("whiteGoldImageSmall6").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP08_PNG.png";
-    document.getElementById("whiteGoldImageSmall7").style.display="none";
-    document.getElementById("whiteGoldImageSmall8").style.display="none";
-    whiteGoldCurrentSlide(1);
-
-    document.getElementById("whiteGoldImage1").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU04_PNG.png";
-    document.getElementById("whiteGoldImage2").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP09_PNG.png";
-    document.getElementById("whiteGoldImage3").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP18_PNG.png";
-    document.getElementById("whiteGoldImage4").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_backcase_GP06_PNG.png";
-    document.getElementById("whiteGoldImage5").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_CU03_PNG.png";
-    document.getElementById("whiteGoldImage6").src="assets/whiteGold/CODE_26393NB-OO-A002CA-01_closeup_GP08_PNG.png";
-    clickcount_whitegold_galleryToPinkGold =0;
-}
 
 function handlewhiteGoldPage_toPinkGold(e) {
     if (clickcount_whitegold_gallery <1 && clickcount_whitegold_spec <1 && clickcount_whitegold_video <1 &&clickcount_pinkGold_toWhiteGold<1 && clickcount_pinkGold_toPinkGold<1) {
@@ -450,23 +326,16 @@ function handlewhiteGoldPage_toPinkGold(e) {
 }
 
 function hideWhiteGold() {
-     // document.querySelector('.watchPage__whiteGold-Container').style.display= 'none';
-        // gsap.to('.watchPage__pinkGold-Container',{duration:1,position:'absolute',top:0,display:'block'})
-    // smokeText_pinkGold.style.display="none";
+
     whiteGold_galleryClose.style.display="none";
   watchPage__whiteGold_gallery.style.display="none";
   watchPage__whiteGold_spec.style.display= "none";
   whiteGold_video.style.display="none";
   whiteGold_close.style.display="none";
-//   whiteGold__spec__360Image.style.display="none";
   clearpinkGoldSpec();
   gsap.to('#watchPage__pinkGold__video',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
   gsap.to('#watchPage__pinkGold__spec',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
   gsap.to('#watchPage__pinkGold__gallery',{duration:1,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});
-    //  for (var i = 0; i <smokeTextSpan_pinkGold.length; i++) {
-    //      smokeTextSpan_pinkGold[i].style.animation = "smoky 2s both";
-    //      smokeTextSpan_pinkGold[i].style.animationDelay= `${1 + i/10}s`; 
-    // }
     gsap.to('#watchPage__whiteGold-Scene',{duration:0.3,opacity:0,onComplete:function() {
         if(whiteGold_360Image!==0){
              window.CI360.destroy();
@@ -492,7 +361,6 @@ function swapPageToPinkGold() {
         clickcount_pinkGold_spec = 0;
         clickcount_pinkGold_specPreventTouch = 0;
         clickcount_pinkGold_gallery = 0;
-        // pinkGold__spec__360Image.style.display="none";
     }});
     gsap.to('.watchPage__whiteGold-selected',{duration:0.3,border: "2px solid #747474",boxShadow: "1px 1px 8px 13px #747474",color: "#373737"});
     gsap.to('#watchPage__whiteGold__toPinkGold',{duration:2,border: "2px solid #ffffff",boxShadow: "1px 1px 8px 13px #7f6f6f6",color: "#ffffff"});

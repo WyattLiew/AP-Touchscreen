@@ -4,7 +4,8 @@
 2. Power auto on - Bios
 
 3. disable swipe function
-4. disable hold for right click
+4. Control panel - Pen & Touch disable right click
+5. disable hold for right click
 -Registry
 HKEY_CURRENT_USER\SOFTWARE\MICROSOFT\wisp\Pen\SysEventParameters
 HoldMode set to 3 (1:on;3:off)

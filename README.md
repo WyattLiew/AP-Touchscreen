@@ -3,9 +3,12 @@
 1. install Windows
 2. Power auto on - Bios
 
-3. disable swipe function
-4. Control panel - Pen & Touch disable right click
-5. disable hold for right click
+3. disable swipe function - HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI
+On the right side, create a new 32-bit DWORD value named AllowEdgeSwipe.
+Leave its value data as 0 (zero) to disable edge swipes.
+
+5. Control panel - Pen & Touch disable right click
+6. disable hold for right click
 -Registry
 HKEY_CURRENT_USER\SOFTWARE\MICROSOFT\wisp\Pen\SysEventParameters
 HoldMode set to 3 (1:on;3:off)
